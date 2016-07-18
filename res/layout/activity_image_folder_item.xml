@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_base_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_base_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <GridView
+            android:id="@+id/id_gv_image_folder_item"
+            android:layout_width="match_parent"
+            android:layout_height="490dp"
+            android:layout_above="@+id/id_ll_image_folder_item_bottom"
+            android:layout_margin="8dp"
+            android:horizontalSpacing="8dp"
+            android:listSelector="@color/transparent"
+            android:numColumns="3"
+            android:scrollbars="none"
+            android:verticalSpacing="8dp" />
+
+        <LinearLayout
+            android:id="@+id/id_ll_image_folder_item_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_bar_height"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical" >
+
+            <include layout="@layout/layout_line" />
+
+            <Button
+                android:id="@+id/id_btn_image_folder_item_finish"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_for_listview_selector"
+                android:text="@string/image_folder_finish_text"
+                android:textColor="@color/bg_text_orange_nor_to_pre_selector"
+                android:textSize="@dimen/text_size_30px" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 基本颜色值 -->
+    <color name="app_base_bg">#f6f6f6</color>
+    <color name="divider_line">#dddddd</color>
+    <color name="red">#ff0000</color>
+    <color name="green">#00ff00</color>
+    <color name="blue">#0000ff</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="gray_text">#dddddd</color>
+    <color name="transparent">#00000000</color>
+    <color name="micro_transparent">#33000000</color>
+    <color name="translucent">#77000000</color>
+    <color name="orange">#fe5f4c</color>
+    <color name="orange_pre">#ef422d</color>
+    <color name="light_orange">#F58476</color>
+    <color name="light_orange_pre">#ff6347</color>
+    <color name="content">#444444</color>
+    <color name="record_text">#666666</color>
+    <color name="record_send_text">#48ae6c</color>
+    <color name="comment_name">#748398</color>
+    <color name="comment_content">#444444</color>
+    <color name="preview_text_color">#333333</color>
+    <color name="hint">#dddddd</color>
+    <color name="line">#cccccc</color>
+    <color name="pager_title_text_nor">#888888</color>
+    <color name="pager_title_text_sel">#ff5d4c</color>
+    <color name="listview_pre">#f8f8f8</color>
+    <color name="dialog_bottom_btn_text">#0099e9</color>
+    <color name="dialog_content">#f5f5f5</color>
+    <color name="orange_text_nor">#fffe5f4c</color>
+    <color name="orange_text_pre">#77fe5f4c</color>
+    <color name="bg_loading_dialog">#77ffffff</color>
+    <color name="pw_bg_nor">#ffffff</color>
+    <color name="pw_bg_pre">#f8f8f8</color>
+
+    <!-- LISTVIEW通用的垂直滚动条颜色值 -->
+    <color name="scrollbar_color">#80888888</color>
+    
+    <!-- 界面最基础颜色：1级 深色 -->
+    <color name="base_level_1">#333333</color>
+    <!-- 界面最基础颜色：2级 淡黑 -->
+    <color name="base_level_2">#666666</color>
+    <!-- 界面最基础颜色：3级 淡灰 -->
+    <color name="base_level_3">#999999</color>
+
+    <!-- 标题栏颜色值 -->
+    <color name="title_bar_bg">#be0a13</color>
+    <color name="white_nor">#ffffffff</color>
+    <color name="white_pre">#77ffffff</color>
+    
+    <color name="launch_bg">#cb141b</color>
+    
+    <!-- 顶部指示条TAB字体颜色值 -->
+    <color name="viewpager_textcolor_normal">#333333</color>
+    <color name="viewpager_textcolor_focus">#be0a13</color>
+    
+    <!-- 底部TAB颜色值 -->
+    <color name="tab_line">#dddddd</color>
+    <color name="tab_btn_text_color_n">#999999</color>
+    <color name="tab_btn_text_color_p">#be0a13</color>
+    
+    <!-- 登录界面颜色值 -->
+    <color name="light_blue">#5fb1f1</color>
+    
+     <!-- 作品登记卡底部备注颜色值 -->
+    <color name="works_card_bottom_hint">#be0a13</color>
+    
+    <!-- 地区选择分割线颜色值 -->
+    <color name="province_line_border">#cccccc</color>
+    
+    <!-- 售价背景颜色值 -->
+    <color name="price_bg">#3fa50e</color>
+
+</resources>

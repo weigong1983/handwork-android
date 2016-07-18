@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/id_rl_only_listview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <!--  
+    <com.daiyan.handwork.app.widget.RefreshLayout
+        android:id="@+id/myRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/id_lv_only"
+            style="@style/listview_style"
+            android:scrollbars="vertical" />
+        
+    </com.daiyan.handwork.app.widget.RefreshLayout>
+    -->
+    <com.daiyan.handwork.app.widget.pull.PullToRefreshListView
+        xmlns:ptr="http://schemas.android.com/apk/res/com.daiyan.handwork"
+        android:id="@+id/myRefreshLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+        ptr:mode="both"
+        style="@style/listview_style"
+        android:divider="@null">
+     </com.daiyan.handwork.app.widget.pull.PullToRefreshListView>
+
+</LinearLayout>

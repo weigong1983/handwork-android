@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.daiyan.handwork"
+    android:versionCode="133"
+    android:versionName="1.3.3" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="20" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <!-- 拍照权限 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- 录音权限 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!-- 往SDCard写入数据权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 在SDCard中创建/删除文件权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 读取SDCard数据权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- 震动权限 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 联网权限 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 允许应用读取低级别的系统日志文件 -->
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <!-- ShareSDK需要的权限 -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:name="com.daiyan.handwork.app.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar" >
+
+        <!-- Begin:使用百度地图SDK -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="XDz3pn8NtUEHOUka1EUZGDCj" />
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.2" >
+                </action>
+            </intent-filter>
+        </service>
+        <!-- End:使用百度地图SDK -->
+
+
+        <!-- Begin:使用ShareSDK -->
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+            <intent-filter>
+                <data android:scheme="tencent100371282" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- 微信分享回调 -->
+        <activity
+            android:name="cn.sharesdk.demo.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- End：使用ShareSDK -->
+
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.daiyan.handwork.app.LaunchActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 引导页 -->
+        <activity
+            android:name="com.daiyan.handwork.app.activity.WelcomePage"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <!-- 登录 -->
+        <activity
+            android:name="com.daiyan.handwork.app.activity.Login"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="adjustPan"/>
+        <!-- 注册 -->
+        <activity
+            android:name="com.daiyan.handwork.app.activity.Register"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="adjustPan"/>
+        <!-- 忘记密码 -->
+        <activity
+            android:name="com.daiyan.handwork.app.activity.ForgotPassword"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="adjustPan"/>
+        <!-- 首页 -->
+        <activity
+            android:name="com.daiyan.handwork.app.activity.MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+
+        <!-- 作品详情 -->
+        <activity
+            android:name="com.daiyan.handwork.app.activity.WorksDetail"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+
+        <!-- 通用浏览器页面 -->
+        <activity
+            android:name="com.daiyan.handwork.app.activity.WebviewActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+
+        <!-- 作品登记卡 -->
+        <activity
+            android:name="com.daiyan.handwork.app.activity.WorksRegistrationCard"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent" />
+
+        <!-- 全屏大图浏览 -->
+        <activity
+            android:name="com.daiyan.handwork.app.activity.ImagePagerActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+
+        <!-- 给研究院留言 -->
+        <activity
+            android:name="com.daiyan.handwork.app.activity.SendMessage"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+
+        <!-- 编辑单行内容 -->
+        <activity
+            android:name="com.daiyan.handwork.app.activity.EditSinglelineContent"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+
+        <!-- 通用仿网易Tab拖动页面 -->
+        <activity
+            android:name="com.daiyan.handwork.app.activity.SampleTabsStyled"
+            android:screenOrientation="portrait"
+            android:theme="@style/StyledIndicators" >
+        </activity>
+
+        <!-- 作品交流Tab页面 -->
+        <activity
+            android:name="com.daiyan.handwork.app.activity.WorksCommunication"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/StyledIndicators" 
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 通知列表 -->
+        <activity
+            android:name="com.daiyan.handwork.app.activity.NoticeList"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+
+        <!-- 活动列表 -->
+        <activity
+            android:name="com.daiyan.handwork.app.activity.ActivitysList"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+
+        <!-- 赞过的作品 -->
+        <activity
+            android:name="com.daiyan.handwork.app.activity.LikeWorks"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+
+        <!-- 研究院 -->
+        <activity
+            android:name="com.daiyan.handwork.app.activity.Institute"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+
+        <!-- 作品浏览 -->
+        <activity
+            android:name="com.daiyan.handwork.app.activity.WorksBrowse"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+
+        <!-- 工艺家 -->
+        <activity
+            android:name="com.daiyan.handwork.app.activity.Artisans"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/StyledIndicators" />
+
+        <!-- 设置 -->
+        <activity
+            android:name="com.daiyan.handwork.app.activity.Setting"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+
+        <!-- 修改密码 -->
+        <activity
+            android:name="com.daiyan.handwork.app.activity.ModifyPassword"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!-- 关于我们 -->
+        <activity
+            android:name="com.daiyan.handwork.app.activity.AboutUs"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+
+        <!-- 个人资料 -->
+        <activity
+            android:name="com.daiyan.handwork.app.activity.PersonalInfo"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+
+        <!-- 认证工艺家 -->
+        <activity
+            android:name="com.daiyan.handwork.app.activity.Authentication"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+
+        <!-- 个人主页 -->
+        <activity
+            android:name="com.daiyan.handwork.app.activity.Homepage"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/StyledIndicators" />
+
+        <!-- 发表作品引导页面 -->
+        <activity
+            android:name="com.daiyan.handwork.app.activity.PublishWorks"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        
+        <!-- 选择地区页面 -->
+        <activity
+            android:name="com.daiyan.handwork.app.activity.SelectAreaActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        
+        <meta-data android:value="5557ef7867e58ea63f00a67c" android:name="UMENG_APPKEY"></meta-data>
+		<meta-data android:value="@string/channel_id_pgyer" android:name="UMENG_CHANNEL"/>
+        
+    </application>
+
+</manifest>

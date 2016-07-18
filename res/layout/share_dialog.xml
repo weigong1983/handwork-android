@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_dialog_white_corner_shape"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="@dimen/padding_10"
+        android:text="分享"
+        android:textColor="@color/content"
+        android:textSize="@dimen/text_size_28px" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line"
+        android:layout_marginLeft="@dimen/padding_3"
+        android:layout_marginRight="@dimen/padding_3"
+        android:background="@color/line" />
+
+    <GridView
+        android:id="@+id/share_gridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/padding_10"
+        android:horizontalSpacing="@dimen/padding_20"
+        android:listSelector="@drawable/bg_for_listview_selector"
+        android:numColumns="3"
+        android:scrollbars="none"
+        android:verticalSpacing="@dimen/padding_20" >
+    </GridView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line"
+        android:background="@color/line" />
+
+    <Button
+        android:id="@+id/id_btn_share_cancel"
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/padding_10"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:gravity="center"
+        android:text="@string/cancel"
+        android:textColor="@color/dialog_bottom_btn_text"
+        android:textSize="@dimen/text_size_28px" />
+
+</LinearLayout>

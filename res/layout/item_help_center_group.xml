@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+    
+    <TextView 
+        android:id="@+id/id_tv_item_help_center_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_10"
+        android:textColor="@color/content"
+        android:textSize="@dimen/content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/id_iv_item_help_center_group"
+        android:text="1.什么是代言？" />
+    
+    <ImageView 
+        android:id="@+id/id_iv_item_help_center_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/padding_10"
+        android:contentDescription="@string/image_content_desc"
+        android:src="@drawable/icon_main_more" />
+    
+    
+    
+
+</RelativeLayout>

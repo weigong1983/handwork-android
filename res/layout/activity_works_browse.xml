@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/id_rl_only_listview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" 
+    android:fitsSystemWindows="true">
+
+    <include layout="@layout/layout_base_title" />
+
+    <com.daiyan.handwork.app.widget.pull.PullToRefreshGridView
+        xmlns:ptr="http://schemas.android.com/apk/res/com.daiyan.handwork"
+        android:id="@+id/myRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:divider="@color/white"
+        android:dividerHeight="1dp"
+        android:horizontalSpacing="2dp"
+        android:listSelector="@drawable/bg_for_listview_selector"
+        android:numColumns="2"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        android:verticalSpacing="1dp"
+        ptr:mode="both" />
+
+</LinearLayout>

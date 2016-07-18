@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">手作品</string>
+    <string name="web_site">www.shouzuopin.com</string>
+    
+    
+    <string name="tips_title">温馨提示</string>
+    <string name="send">发送</string>
+    <string name="confirm">确定</string>
+    <string name="save">保存</string>
+    <string name="publish">发布</string>
+    
+    <string name="main_exit_app_tips">是否退出手作品？</string>
+    
+    <string name="loading_data_tips">正在加载…</string>
+    <string name="loading_no_more_data_tips">没有更多数据！</string>
+    <string name="refreshing_data_tips">正在刷新…</string>
+    
+    
+    <string name="pw_from_camera">拍照</string>
+    <string name="pw_from_album">从相册中选择</string>
+    <string name="pw_cancel">取消</string>
+        
+    
+    <!-- 登录 -->
+    <string name="login_title">登录</string>
+    <string name="login_register">快速注册</string>
+    <string name="login_mobile_hint">请输入手机号</string>
+    <string name="login_pwd_hint">请输入密码</string>
+    <string name="login_forget_pwd_text"><u>忘记密码?</u></string>
+    <string name="login_third_party_login_text">第三方账号登录</string>
+    <string name="login_success_text">登录成功</string>
+    <string name="login_logining_text">正在登录…</string>
+    <string name="login_fail_text">登录失败</string>
+    <string name="login_input_invalid_phoneno">请输入有效的手机号码</string>
+    <string name="login_input_invalid_password">请输入密码</string>
+   
+    <!-- 注册 -->
+    <string name="register_title">注册</string>
+    <string name="register_loading_text">正在注册…</string>
+    <string name="register_mobile_hint">手机号码</string>
+    <string name="register_validcode_hint">验证码</string>
+    <string name="register_get_validcode">获取验证码</string>
+    <string name="register_pwd_hint">请输入密码</string>
+    <string name="register_agree_service_term_hint">遵守手作品《服务条款》</string>
+    <string name="register_please_agree_service_term_hint">未勾选遵守手作品《服务条款》</string>
+    
+    <string name="register_pwd_again_hint">再次输入登录密码</string>
+    <string name="register_mobile_wrong_tips">请输入有效的手机号码</string>
+    <string name="register_pwd_empty_wrong_tips">请输入密码</string>
+	<string name="register_validcode_empty_wrong_tips">请输入验证码</string>
+    <string name="register_pwd_differ_wrong_tips">两次输入的密码不一致</string>
+    <string name="register_success_tips">注册成功，进入首页</string>
+    
+    <!-- 获取验证码 -->
+     <string name="get_validcod_loading_text">正在获取验证码…</string>
+    <string name="get_validcod_success_tips">获取验证码成功，请查收短信</string>
+    
+    <!-- 修改资料提示 -->
+    <string name="modify_loading_text">正在提交修改…</string>
+    <string name="modify_success_tips">修改成功</string>
+    
+     <!-- 忘记密码 -->
+    <string name="forgot_password_title">忘记密码</string>
+    <string name="input_old_pwd_hint">请输入旧密码</string>
+    <string name="input_new_pwd_hint">请输入新密码</string>
+    <string name="input_confirm_pwd_hint">确认新密码</string>
+    <string name="input_pwd_not_differ_wrong_hint">两次输入的密码不一致</string>
+    <string name="reset_pwd_success_tips">重置密码成功</string>
+    
+    <!-- 首页 -->
+    <string name="FRAGMENT_HOME_text">首页</string>
+    <string name="FRAGMENT_FIND_text">发现</string>
+    <string name="FRAGMENT_MINE_text">我的</string>
+    
+    <!-- 作品详情 -->
+    <string name="works_detail_title">作品详情</string>
+    <string name="works_description_hint">作品简介</string>
+    <string name="works_auther_hint">作者信息</string>
+    <string name="works_production_process">了解工艺制作流程</string>
+    <string name="works_registration_card">查看作品登记卡</string>
+    <string name="works_left_message">给研究院留言</string>
+    <string name="works_goto_see">去艺术馆看看</string>
+    
+    <string name="works_card_title_content">作品登记卡</string>
+    <string name="works_card_name">作品名称</string>
+    <string name="works_card_material">材料</string>
+    <string name="works_card_size">尺寸</string>
+    <string name="works_card_place">出品地</string>
+    <string name="works_card_author">出品人</string>
+    <string name="works_card_title">职称</string>
+    <string name="works_card_create">主创</string>
+    <string name="works_card_produce">监制</string>
+    <string name="works_card_technical_type">制作工艺</string>
+    <string name="works_card_make_time">制作工时</string>
+    <string name="works_card_refrence_price">参考价格</string>
+    <string name="works_card_order_time">订制时间</string>
+    <string name="works_card_no">作品编号</string>
+    <string name="works_card_original">原作</string>
+    <string name="works_card_limit">限量</string>
+    <string name="works_card_mass">量产</string>
+    <string name="works_card_package">包装</string>
+    <string name="works_card_unit_cm">(cm)</string>
+    <string name="works_card_unit_per_day">(人/天)</string>
+    <string name="works_card_unit_day">(天)</string>
+    <string name="works_card_unit_yuan">(元)</string>
+    <string name="works_card_bottom_hint">广东省岭南民间工艺研究院监制</string>
+    
+    
+    <!-- 活动详情 -->
+    <string name="activity_detail_title">活动详情</string>
+    
+    <!-- 作品制作流程 -->
+    <string name="works_production_process_title">作品制作流程</string>
+    
+    <!-- 给研究院留言 -->
+    <string name="send_message_title">给研究院留言</string>
+    <string name="send_message_hint_text">把想说的都留下吧...</string>
+
+    <!-- 编辑简介 -->
+    <string name="edit_intro_title">编辑简介</string>
+    <string name="edit_intro_right_text">完成</string>
+    <string name="edit_intro_hint_text">输入你的简介内容</string>
+  
+    <!-- 评论 -->
+    <string name="comment_pub_title">评论</string>
+    <string name="comment_pub_right_text">完成</string>
+    <string name="comment_pub_hint_text">输入你的评论内容</string>
+    <string name="comment_pub_empty_tips">评论内容不能为空</string>
+    <string name="comment_pub_loading_text">正在发表评论…</string>
+    <string name="comment_success_hint_tips">评论成功</string>
+    
+    <!-- 从相册中选择 -->
+    <string name="image_folder_title">相册</string>
+    <string name="image_folder_finish_text">完成</string>
+    <string name="image_folder_finish_left_text">完成(</string>
+    <string name="image_folder_finish_right_text">)</string>
+    <string name="image_folder_limit_exceeded_text">最多选择9张图片</string>
+    
+
+ 
+    <!-- 首页TAB标题栏 -->
+    <string name="title_home_text">首页</string>
+    <string name="title_find_text">发现</string>
+    <string name="title_mine_text">我的</string>
+    
+    <!-- 作品交流TAB标题 -->
+    <string name="title_works_like">赞过的人</string>
+    <string name="title_works_comment">评论过的人</string>
+    <string name="comment">评论</string>
+    <string name="comment_edit_hint_text">说说你的看法吧...</string>
+    
+    <!-- 发现版块 -->
+    <string name="title_workshop">作品坊</string>
+    <string name="title_artisans">工艺家</string>
+    <string name="title_collecting">热卖中</string>
+    <string name="title_institute">研究院</string>
+
+    <!-- 研究院 -->
+    <string name="institute_fullname">广东省岭南民间工艺研究院(艺术馆)</string>
+    <string name="institute_phone">020-86868866</string>
+    <string name="institute_email">lnmjgy@163.com</string>
+    <string name="institute_address">广州市新港东路1068号中洲中心北塔首层</string>
+    <string name="institute_bus">乘车指引</string>
+    <string name="institute_market_standard">《工艺美术品交易服务标准》</string>
+    <string name="institute_recent_activitys">近期活动</string>
+    <string name="title_market_standard">工艺美术品交易服务标准</string>
+    
+    <string name="install_email_application_hint">您的手机暂未安装邮件应用程序, 请先下载安装</string>
+    <string name="install_map_application_hint">您的手机暂未安装地图应用程序, 请先下载安装</string>
+    <!-- 发表作品 -->
+    <string name="publish_works_title">发表作品</string>
+    
+    
+    <!-- 我的版块 -->
+    <string name="mine_not_auth">认证</string>
+    <string name="mine_has_auth">我的主页</string>
+    <string name="mine_auth_review">认证中</string>
+    <string name="mine_not_auth_hint">认证成为工艺家，可发表作品</string>
+    <string name="mine_has_auth_hint">认证工艺家</string>
+    <string name="mine_auth_review_hint">已提交认证，正在审核中...</string>
+    <string name="mine_like">赞</string>
+    <string name="mine_activitys">活动</string>
+    <string name="mine_notice">通知</string>
+    <string name="mine_setting">设置</string>
+    <string name="mine_no_activity_tips">暂未参加活动!</string>
+    <string name="mine_no_notice_tips">暂无通知!</string>
+    <string name="mine_register_hint">游客  (点击注册成为会员)</string>
+    
+    
+    
+    <!-- 设置 -->
+    <string name="setting_title">设置</string>
+    <string name="setting_personal_info">个人资料</string>
+    <string name="setting_modify_password">修改密码</string>
+    <string name="setting_share_app">分享软件</string>
+    <string name="setting_about_us">关于我们</string>
+    <string name="setting_logout">退出登录</string>
+    
+    <!-- 关于我们 -->
+    <string name="welcome_page">欢迎页</string>
+    <string name="service_term">服务条款</string>
+    <string name="copyright_text">岭南民间工艺研究院|代言网联合出品</string>
+    
+    <string name="setting_help_text">帮助中心</string>
+    <string name="setting_phone_text">客服电话</string>
+    <string name="setting_phone">020-29822551</string>
+
+    <!-- 个人资料 -->
+    <string name="personal_info_normal_acount">普通用户</string>
+    <string name="personal_info_artisan_account">认证工艺家</string>
+    <string name="personal_info_avatar">个人头像</string>
+    <string name="personal_info_signature">个人签名</string>
+    <string name="personal_info_name">姓名</string>
+    <string name="personal_info_title">职称</string>
+    <string name="personal_info_designation">称号</string>
+    <string name="personal_info_intangibleheritage">非遗</string>
+    <string name="personal_info_work_age">从业年限</string>
+    <string name="personal_info_category">工艺品类</string>
+    <string name="personal_info_area">地区</string>
+    <string name="personal_info_association">所属协会</string>
+    <string name="personal_info_bind_phone">绑定手机</string>
+    <string name="personal_info_account_type">账号类型</string>
+	
+	<!-- 认证工艺家 -->
+	<string name="authentication_title">认证</string>
+    <string name="authentication_submit">提交认证</string>
+    <string name="authentication_submiting_tips">正在提交认证…</string>
+    <string name="authentication_submit_success">提交认证成功</string>
+    <string name="authentication_not_complete_tips">资料填写不完整</string>
+    
+    
+	<!-- 意见反馈 -->
+    <string name="feedback_title">意见反馈</string>
+    <string name="feedback_title_right_text">完成</string>
+    <string name="feedback_hint_text">请输入您的反馈意见</string>
+    <string name="feedback_empty_tips">反馈意见不能为空</string>
+    <string name="feedback_loading_text">正在完成…</string>
+    <!-- 帮助中心 -->
+    <string name="help_center_title">帮助中心</string>
+    <string name="help_center_group_1st">1.什么是代言？</string>
+    <string name="help_center_group_2nd">2.代言网是干什么的？</string>
+    <string name="help_center_group_3rd">3.代言网有什么特别的功能？</string>
+    <string name="help_center_group_4th">4.代言对我有什么好处？</string>
+    <string name="help_center_group_5th">5.参加平台发布的活动是否有保障？</string>
+    <string name="help_center_child_1st">如果你对某品牌及其产品认可，愿意分享传播该品牌及其产品，那么你也在为该品牌代言。</string>
+    <string name="help_center_child_2nd">代言网提供一个平台，让每一个有自己喜欢的品牌的用户，能把自己的喜爱传播给更多的人，并与该品牌建立联系与互动。同时，代言网倡导对公益事业的关注，提供让用户自行分享传播公益活动、公益事业的板块。</string>
+    <string name="help_center_child_3rd">代言网基于全民代言方式独创代言卡模式，可让普通用户成为自己喜爱的品牌的代言人，欢迎你加入到代言网平台。</string>
+    <string name="help_center_child_4th">对于普通用户，代言网提供让你与品牌联系与互动的机会，并能在完成特定任务后获得品牌送出的奖励；在分享与传播的过程中，代言网也帮你在社交圈内树立个人形象。
+对于品牌商，代言网让品牌及其产品在朋友圈熟人网络中获得大量曝光的机会，扩大品牌知名度。</string>
+    <string name="help_center_child_5th">代言网会对每个品牌/商家进行认证，并对每个活动进行审核，代言网保证每个品牌/商家的资质，及每个活动的有效性，但基于用户自己的分享传播行为，代言网不承担其他责任。</string>
+
+    
+    <string name="viewpager_indicator">%1$d/%2$d</string>
+    
+    <string name="image_content_desc">Image Content Description</string>
+    
+     <!-- 发送留言提示 -->
+    <string name="send_message_loading_text">正在发送留言…</string>
+    <string name="send_message_success_tips">留言成功</string>
+    <string name="send_message_content_empty_tips">留言内容不能为空</string>
+    
+    <!-- 发送录音提示 -->
+    <string name="voice_record">录制个性语音</string>
+    <string name="voice_reset_record">重新录制个性语音</string>
+    <string name="sending_voice_tips">正在发布…</string>
+    <string name="sending_voice_success_tips">发布成功</string>
+    
+    <!-- 游客相关提示 -->
+    <string name="guest_register_hint">您当前是游客身份，立即注册成为会员？</string>
+    <string name="guest_register_right_now">注册成为会员</string>
+    
+     <!-- 议价出售 -->
+    <string name="bargain_price">洽商</string>
+    
+    <!-- App分发渠道ID -->
+    <string name="channel_id_pgyer">pgyer</string>
+    <string name="channel_id_wandoujia">wandoujia</string>
+    <string name="channel_id_qq">qq</string>
+    <string name="channel_id_360">360</string>
+    <string name="channel_id_baidu">baidu</string>
+    
+</resources>

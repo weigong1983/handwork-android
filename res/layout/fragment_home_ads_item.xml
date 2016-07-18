@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <AbsoluteLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <com.daiyan.handwork.app.widget.GuideGallery
+            android:id="@+id/adsGallery"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:fadingEdge="none"
+            android:unselectedAlpha="5" />
+
+        <com.daiyan.handwork.app.widget.PointPageView
+            android:id="@+id/adsFocusPageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="0dip"
+            android:layout_y="0dip" >
+        </com.daiyan.handwork.app.widget.PointPageView>
+    </AbsoluteLayout>
+
+</LinearLayout>

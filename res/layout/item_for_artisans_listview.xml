@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_for_listview_selector"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_10" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/authorLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <com.daiyan.handwork.app.widget.RoundImageView
+                android:id="@+id/avatarImageView"
+                android:layout_width="54dp"
+                android:layout_height="54dp"
+                android:scaleType="center"
+                android:src="@drawable/default_avatar" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/nameTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:maxEms="10"
+                        android:text="首届广东省泥人节作品"
+                        android:textColor="@color/base_level_1"
+                        android:textSize="@dimen/title" />
+
+                    <ImageView
+                        android:id="@+id/authImageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:src="@drawable/icon_auth" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/worksCountTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="12件作品"
+                    android:textColor="@color/base_level_2"
+                    android:textSize="@dimen/content" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <HorizontalScrollView
+            android:id="@+id/content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:layout_marginBottom="10dip"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical" >
+
+                <GridView
+                    android:id="@+id/worksGridView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="135dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/white"
+                    android:columnWidth="135dp"
+                    android:divider="@color/line"
+                    android:dividerHeight="@dimen/padding_10"
+                    android:gravity="center"
+                    android:horizontalSpacing="@dimen/padding_10"
+                    android:listSelector="@drawable/bg_for_listview_selector"
+                    android:numColumns="auto_fit"
+                    android:scrollbars="none"
+                    android:fadingEdge="none"
+                    android:stretchMode="spacingWidthUniform"/>
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+
+</LinearLayout>

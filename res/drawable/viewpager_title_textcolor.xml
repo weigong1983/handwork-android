@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Non focused states -->
+    <item android:state_focused="false" android:state_pressed="false" android:state_selected="false" android:color="@color/viewpager_textcolor_normal"/>
+    <item android:state_focused="false" android:state_pressed="false" android:state_selected="true" android:color="@color/viewpager_textcolor_focus"/>
+
+    <!-- Focused states -->
+    <item android:state_focused="true" android:state_pressed="false" android:state_selected="false" android:color="@color/viewpager_textcolor_normal"/>
+    <item android:state_focused="true" android:state_pressed="false" android:state_selected="true" android:color="@color/viewpager_textcolor_focus"/>
+
+    <!-- Pressed -->
+    <item android:state_pressed="true" android:color="@color/viewpager_textcolor_focus"/>
+
+</selector>

@@ -1,0 +1,88 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sliding="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+	android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+
+        
+        <android.support.v4.view.ViewPager
+            android:id="@+id/id_vp_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/id_line_tab_top"/>
+        
+        <include
+            android:id="@+id/id_ll_main_title"
+            layout="@layout/layout_base_title_for_main"/>
+        
+
+        <View
+            android:id="@+id/id_line_tab_top"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@+id/id_rg_main_tab_group"
+            android:background="@color/tab_line" />
+
+        <RadioGroup
+            android:id="@+id/id_rg_main_tab_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/app_base_bg"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/padding_2"
+            android:paddingTop="@dimen/padding_2" >
+
+            <RadioButton
+                android:id="@+id/id_rb_FRAGMENT_HOME"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:button="@null"
+                android:checked="true"
+                android:drawableTop="@drawable/tab_btn_home_selector"
+                android:gravity="center"
+                android:text="@string/FRAGMENT_HOME_text"
+                android:textColor="@color/tab_btn_text_color_selector"
+                android:textSize="@dimen/tabbar_text_size" />
+
+            <RadioButton
+                android:id="@+id/id_rb_FRAGMENT_FIND"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:button="@null"
+                android:drawableTop="@drawable/tab_btn_find_selector"
+                android:gravity="center"
+                android:text="@string/FRAGMENT_FIND_text"
+                android:textColor="@color/tab_btn_text_color_selector"
+                android:textSize="@dimen/tabbar_text_size" />
+
+            <RadioButton
+                android:id="@+id/id_rb_FRAGMENT_MINE"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:button="@null"
+                android:drawableTop="@drawable/tab_btn_mine_selector"
+                android:gravity="center"
+                android:text="@string/FRAGMENT_MINE_text"
+                android:textColor="@color/tab_btn_text_color_selector"
+                android:textSize="@dimen/tabbar_text_size" />
+        </RadioGroup>
+    </RelativeLayout>
+
+</LinearLayout>

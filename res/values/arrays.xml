@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 发现页面4个版块名称 -->
+    <string-array name="find_item_names">
+        <item>作品坊</item>
+        <item>工艺家</item>
+        <item>热卖中</item>
+        <item>研究院</item>
+    </string-array>
+
+    <!-- 发现页面4个版块图片 -->
+    <string-array name="find_item_imgs">
+        <item>@drawable/find_item_workshop</item>
+        <item>@drawable/find_item_artisans</item>
+        <item>@drawable/find_item_collecting</item>
+        <item>@drawable/find_item_institute</item>
+    </string-array>
+
+    <!-- 职称类型 -->
+    <string-array name="title">
+        <item>高级工艺师</item>
+        <item>中级工艺师</item>
+        <item>初级工艺师</item>
+        <item>工艺师</item>
+    </string-array>
+
+    <!-- 称号类型 -->
+    <string-array name="callname">
+        <item>国家级工艺美术大师</item>
+        <item>省级工艺美术大师</item>
+        <item>市级工艺美术师</item>
+        <item>工艺美术师</item>
+    </string-array>
+
+    <!-- 非遗类型 -->
+    <string-array name="intangibleheritage">
+        <item>国家级传承人</item>
+        <item>省级传承人</item>
+        <item>市级传承人</item>
+        <item>传承人</item>
+    </string-array>
+
+    <!-- 工艺品类 -->
+    <string-array name="category">
+        <item>雕刻</item>
+        <item>刺绣</item>
+        <item>陶瓷</item>
+        <item>漆器</item>
+        <item>金属</item>
+        <item>综合</item>
+    </string-array>
+    
+    
+    
+    <string-array name="help_center_group">
+        <item>@string/help_center_group_1st</item>
+        <item>@string/help_center_group_2nd</item>
+        <item>@string/help_center_group_3rd</item>
+        <item>@string/help_center_group_4th</item>
+        <item>@string/help_center_group_5th</item>
+    </string-array>
+    <string-array name="help_center_child">
+        <item>@string/help_center_child_1st</item>
+        <item>@string/help_center_child_2nd</item>
+        <item>@string/help_center_child_3rd</item>
+        <item>@string/help_center_child_4th</item>
+        <item>@string/help_center_child_5th</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_base_bg"
+    android:orientation="vertical" 
+    android:fitsSystemWindows="true">
+
+    <include layout="@layout/layout_base_title" />
+
+    <TextView
+        android:id="@+id/id_tv_empty_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_30"
+        android:drawablePadding="@dimen/padding_10"
+        android:drawableTop="@drawable/icon_empty_list_top"
+        android:gravity="center"
+        android:visibility="gone"
+        android:textColor="@color/hint"
+        android:textSize="@dimen/text_size_28px" />
+    
+    <com.daiyan.handwork.app.widget.RefreshLayout
+        android:id="@+id/id_rl_activity_only"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/id_lv_activity_only"
+            style="@style/listview_style" />
+    </com.daiyan.handwork.app.widget.RefreshLayout>
+
+</LinearLayout>

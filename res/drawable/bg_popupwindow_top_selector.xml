@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!-- 点击时 -->
+    <item android:state_pressed="true">
+        <shape>
+            <solid android:color="@color/pw_bg_pre" />
+
+            <corners 
+                android:topLeftRadius="4dp" 
+                android:topRightRadius="4dp"
+                android:bottomLeftRadius="0dp"
+                 android:bottomRightRadius="0dp" />
+
+            <stroke 
+                android:width="0dp" 
+                android:color="#afafaf" />
+        </shape>
+    </item>
+    <!-- 获得焦点时 -->
+    <item android:state_focused="true">
+        <shape>
+            <solid android:color="@color/pw_bg_pre" />
+
+            <corners 
+                android:topLeftRadius="4dp" 
+                android:topRightRadius="4dp"
+                android:bottomLeftRadius="0dp"
+                 android:bottomRightRadius="0dp" />
+
+            <stroke 
+                android:width="0dp" 
+                android:color="#afafaf" />
+        </shape>
+    </item>
+    <!-- 默认状态 -->
+    <item>
+        <shape>
+            <solid android:color="@color/pw_bg_nor" />
+
+            <corners 
+                android:topLeftRadius="5dp" 
+                android:topRightRadius="5dp"
+                android:bottomLeftRadius="0dp"
+                 android:bottomRightRadius="0dp" />
+
+            <stroke android:width="0dp" android:color="#afafaf" />
+        </shape>
+    </item>
+</selector>
